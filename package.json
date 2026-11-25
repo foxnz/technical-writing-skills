@@ -1,15 +1,16 @@
 {
   "name": "technical-writing-skills",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
-  "description": "Claude Code skills for technical writers — developer docs, user guides, internal docs, READMEs, API references, release notes, and the planning, editing and asset craft around them.",
+  "description": "Agent skills that help technical writers plan, write, edit and review documentation.",
   "license": "MIT",
   "repository": "github:Timonwa/technical-writing-skills",
   "packageManager": "pnpm@11.1.1",
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "validate": "claude plugin validate . --strict"
+    "validate": "claude plugin validate .",
+    "check:skills": "node scripts/check-skills.mjs"
   },
   "devDependencies": {
     "prettier": "3.9.6"
